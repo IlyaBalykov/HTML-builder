@@ -62,10 +62,11 @@ async function build() {
         }
       }
     });
-  // for copy assets
+
   await copyAssets();
 }
 
+// for copy assets
 async function copyAssets() {
   const source = path.resolve(__dirname, 'assets');
   const destination = path.resolve(__dirname, 'project-dist', 'assets');

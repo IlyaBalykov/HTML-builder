@@ -2,7 +2,7 @@ const { stdin, stdout } = process;
 const fs = require('fs');
 const path = require('path');
 
-process.on('exit', () => stdout.write('See you later\n'));
+process.on('exit', () => stdout.write('\nSee you later\n'));
 process.on('SIGINT', () => {
   process.exit();
 });
